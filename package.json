@@ -1,0 +1,22 @@
+{
+  "name": "dia",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "Dia is an AI and command line interface trained on her own api. She can interact with the user and recognize commands that translate into macros that the CLI can use to complete tasks such as connecting to other machines and moving files. This is an Open Source project showcasing a thesis in logic and reasoning in Deep Learning, and AI to interface experimentation. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Deep",
+    "Machine",
+    "Learning",
+    "Functional",
+    "Programming"
+  ],
+  "author": "Joshua Whitfield",
+  "license": "ISC",
+  "dependencies": {
+    "md5": "^2.3.0"
+  }
+}

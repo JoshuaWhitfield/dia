@@ -17,6 +17,7 @@
   "author": "Joshua Whitfield",
   "license": "ISC",
   "dependencies": {
+    "func-fave": "^1.31.0",
     "md5": "^2.3.0"
   }
 }

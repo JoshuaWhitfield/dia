@@ -144,8 +144,13 @@ const createTemplate = (cmd_name, usage_short_item, usage_long_item, description
     return new Template(cmd_name, usage_short_item, usage_long_item, description);
 }
 
+const createTemplateObject = (cmd_name, short, long, description) => {
+    return {cmd_name, short, long, description}
+}
+
 module.exports = {
     createTemplate,
+    createTemplateObject,
     BLANK_USAGE_BODY, B,
     STANDARD_TEMPLATE,
 }

@@ -8,6 +8,7 @@ class CLI {
         }
         this.standard = STANDARD_RETURN_TEMPLATE;
         this.process = true;
+        this.prompt = ``
     }
 
     toggleProcess() {
@@ -25,6 +26,8 @@ class CLI {
     getError(status = 0, data = {}) {
         return {status, data};
     }
+
+    
 
     runProcess() {
         try {

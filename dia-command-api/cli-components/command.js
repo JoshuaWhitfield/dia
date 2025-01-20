@@ -31,6 +31,7 @@ class Command {
     }
 }
 
+
 const createCommand = (functionBody, manual) => {
     return new Command(functionBody, manual)
 } 

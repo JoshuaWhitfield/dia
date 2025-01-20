@@ -5,7 +5,7 @@ const MARKUP = {
     charsets: {
         alpha: 'qwertyuiopasdfghjklzxcvbnm',
         number: '1234567890',
-        symbol: '~\`!@#$%^&*()_+-=\|[]{};\':\"\,<>/?\"',
+        symbol: '~\`!@%&()_+-=\|[]{};\':\"\,<>/?\"',
     }
 }
 
@@ -55,17 +55,17 @@ class Local {
                                 (typeof(this.scope_body.keywords[new_keyword_name]) == "undefined")
                                 ,
                                 () => {
-                                    console.log(`       scope: local assignment ${new_keyword_name} made!`)
+                                    console.log(`       [scope]: local assignment ${new_keyword_name} made!`)
                                     return true;
                                 },
                                 () => {
-                                    console.log(`       scope: local assignment ${new_keyword_name} already exists...`)
+                                    console.log(`       [scope][error]: local assignment ${new_keyword_name} already exists...`)
                                     return false
                                 }
                             );
                         },
                         () => {
-                            console.log(`       scope: illegal character '${MARKUP.charsets.symbol[result.indexOf(false)]}'`)
+                            console.log(`       [scope][error]: illegal character '${MARKUP.charsets.symbol[result.indexOf(false)]}'`)
                             return false;
                         }
                     )

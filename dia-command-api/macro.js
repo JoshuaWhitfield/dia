@@ -2,9 +2,9 @@ const { createTemplate, createTemplateObject, BLANK_MANUAL_BODY, STANDARD_TEMPLA
 const { createLocal } = require('./prereqs/localScope');
 const { createData } = require('./prereqs/usageData');
 
-class Command {
-    
-    constructor(functionBody, manualBody = STANDARD_TEMPLATE){
+class MACRO {
+
+    constructor(functionBody, manualBody = STANDARD_TEMPLATE) {
         this.iteration = 0
         const { cmd_name, short, long, description } = manualBody;
         this.usage = createTemplate(cmd_name, short, long, description);
@@ -27,14 +27,8 @@ class Command {
             usage: ${this.usage}\n\n
             scope: ${this.scope}\n\n
             data: ${this.data}\n\n
+
         `)
     }
-}
 
-const createCommand = (functionBody, manual) => {
-    return new Command(functionBody, manual)
-} 
-
-module.exports = {
-    createCommand,
 }

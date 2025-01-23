@@ -18,8 +18,8 @@ class Command {
         }
     }
 
-    safeRun() {
-        return this.body.function.run();
+    safeRun(paramsClassInstance) {
+        return this.body.function.run(paramsClassInstance.getArrayParams());
     }
 
     display() {
